@@ -10,11 +10,6 @@ def display_menu():
 display_menu()
 # Task 1 End
 
-Output:
-
-
-
-
 ## Task-2:
 # Task 2 Start
 print("Task 2 User Input")
@@ -40,10 +35,6 @@ if __name__ == "__main__":
     main()
 
 # Task 2 End #
-
-Output:
-
-
 
 
 ## Task-3:
@@ -94,7 +85,5 @@ if __name__ == "__main__":
     main()
 
 # Task 3 End 
-
-Output:
 
 
