@@ -1,26 +1,25 @@
-def gps(city):
-    # Stub implementation, always returning Brisbane's coordinates
-    brisbane_coordinates = { "latitude": -27.4689682, "longitude": 153.0234991 }
-    return brisbane_coordinates
+# This is all about Task 7
+import requests
 
-def search_species(city):
-    # Stub im
-    #plementation, returning a list of species dictionary
-    species_list = [
-        {"name": "Koala", "population": 5000},
-        {"name": "Kangaroo", "population": 3000},
-        {"name": "Platypus", "population": 100},
-        {"name": "Shark", "population": 500},
-        {"name": "Dolphine", "population": 3500},
-        {"name": "Cat", "population": 1200},
-    ]
-    print (" Here the Brisbane all species:---------- \n",species_list)
+def gps_coordinate(city):
 
-# Assert statements to check if Brisbane's coordinates are returned correctly
-brisbane_coordinates = gps("Brisbane")
-assert brisbane_coordinates == { "latitude": -27.4689682, "longitude": 153.0234991 }
+    base_url = f"https://us1.locationiq.com/v1/search?key=pk.37e94aa3017ca984d06aff04b69037ef&q={city}&format=json&"
+    
+    response = requests.get(base_url)
+    # response.raise_for_status()
+    data = response.json()
+    if data:
+        latitude = float(data[0]['lat'])
+        longitude = float(data[0]['lon'])
+        return {'latitude': latitude, 'longitude': longitude}
+    else:
+        return None
+# Uncomment the following lines for testing
 
+# Testing the gps_coordinate function
+# assert gps_coordinate("Cairns") == {'latitude': -16.9206657, 'longitude': 145.7721854}
+# assert gps_coordinate("Queensland") == {'latitude': -17.1022281, 'longitude': 145.7650465401662}
 
-# Test the search_species function
-city_species = search_species("Brisbane")
-print(city_species)  # Output will be a list of species dictionaries
+user_input=input("enter the city name:")
+city=user_input
+print(gps_coordinate(city))
