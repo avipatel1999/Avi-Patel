@@ -25,9 +25,6 @@ user_input=input("enter the city name:")
 city=user_input
 print(gps_coordinate(city))
 
-Output:
-
-
 
 ## Sighting
 # sighting.py
@@ -97,8 +94,6 @@ print(f"Animal was sighted in {locality_details} on {start_date}\n")
 
 """ 9.2 This is for task 9 only to run this task you want to uncommant this part end"""
 """And also Task 10 Include in this file"""
-
-Output:
 
 
 
