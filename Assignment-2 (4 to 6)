@@ -70,6 +70,9 @@ if __name__ == "__main__":
 # # To run your code,type this in command 
 # sighthins species melbourne #
 
+# Task 4 output #
+
+
 
 # Task 5 Start #
 def display_menu():
@@ -152,11 +155,16 @@ if __name__ == "__main__":
     main()
 # Task 5 End #
 
+
 # To run this code you right this command
 #wildlife> venomous
 #Enter city: melbourne
 #Species found:
 #TaxonID: 236 , Name: snake, Pest Status: Venomous
+
+# Task 5 output #
+
+
 
 # task 6 start #
 
@@ -189,7 +197,10 @@ print(city_species)
 
 # Output will be a list of species dictionaries
 
-# task 6 #
+# task 6 end #
+
+
+# task 6 output #
 
 
 
