@@ -1,4 +1,5 @@
-# Task 4 Start #
+## Task-4:
+# Task 4 Start
 
 def display_menu():
     print("Menu:")
@@ -70,10 +71,11 @@ if __name__ == "__main__":
 # # To run your code,type this in command 
 # sighthins species melbourne #
 
-# Task 4 output #
+Output:
 
 
 
+## Task-5:
 # Task 5 Start #
 def display_menu():
     """
@@ -162,10 +164,11 @@ if __name__ == "__main__":
 #Species found:
 #TaxonID: 236 , Name: snake, Pest Status: Venomous
 
-# Task 5 output #
+Output:
 
 
 
+## Task-6:
 # task 6 start #
 
 def gps(city):
@@ -200,7 +203,8 @@ print(city_species)
 # task 6 end #
 
 
-# task 6 output #
+Output:
+
 
 
 
