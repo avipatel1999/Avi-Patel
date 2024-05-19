@@ -71,9 +71,6 @@ if __name__ == "__main__":
 # # To run your code,type this in command 
 # sighthins species melbourne #
 
-Output:
-
-
 
 ## Task-5:
 # Task 5 Start #
@@ -164,9 +161,6 @@ if __name__ == "__main__":
 #Species found:
 #TaxonID: 236 , Name: snake, Pest Status: Venomous
 
-Output:
-
-
 
 ## Task-6:
 # task 6 start #
@@ -201,11 +195,6 @@ print(city_species)
 # Output will be a list of species dictionaries
 
 # task 6 end #
-
-
-Output:
-
-
 
 
 
